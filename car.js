@@ -20,6 +20,12 @@ class Car{
         this.sensor.update();
     }
 
+    #createPolygon(){
+        const points=[];
+        const rad=Math.hypot(this.width, this.height)/2;
+        const alpha=Math.atan2(this.width, this.height);
+    }
+
     #move(){
         if(this.controls.forward){
             this.speed+=this.acceleration;
